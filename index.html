@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Title -->
+    <title>Canción y Emoción | Canciones Personalizadas para Empresas y Eventos</title>
+
+    <!-- Meta Description -->
+    <meta name="description"
+        content="Canción y Emoción crea canciones y jingles personalizados para empresas, eventos y ocasiones especiales. Composiciones únicas creadas con inteligencia artificial, adaptadas a tu estilo y necesidades. ¡Elige tu canción perfecta hoy mismo!">
+
+    <!-- Meta Keywords -->
+    <meta name="keywords"
+        content="canciones personalizadas, jingles para empresas, música a medida, canciones para eventos, canciones para bodas, canciones únicas, música por encargo, inteligencia artificial, jingles creativos, Canción y Emoción">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Canción y Emoción | Canciones Personalizadas para Empresas y Eventos">
+    <meta property="og:description"
+        content="Crea la canción perfecta para tu empresa, evento o como regalo especial. En Canción y Emoción ofrecemos composiciones personalizadas únicas para cualquier ocasión, con un toque creativo y tecnología de inteligencia artificial.">
+    <meta property="og:url" content="https://www.cancionyemocion.com">
+    <meta property="og:image" content="https://www.cancionyemocion.com/images/og-image.jpg">
+    <!-- Asegúrate de colocar la ruta correcta a tu imagen -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Canción y Emoción">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Canción y Emoción | Canciones Personalizadas para Empresas y Eventos">
+    <meta name="twitter:description"
+        content="Descubre cómo en Canción y Emoción podemos crear la canción perfecta para cualquier ocasión. Personalizada, única y a tu estilo.">
+    <meta name="twitter:image" content="https://www.cancionyemocion.com/images/twitter-image.jpg">
+    <!-- Asegúrate de colocar la ruta correcta a tu imagen -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-color: #121212;
+        color: #fff;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .sidebar {
+        background-color: #000;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .main-content {
+        background-color: #121212;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .playlist-cover {
+        width: 232px;
+        height: 232px;
+        object-fit: cover;
+    }
+
+    .track-list {
+        font-size: 14px;
+    }
+
+    .track-list .track {
+        padding: 10px 0;
+        border-bottom: 1px solid #282828;
+    }
+
+    .player {
+        background-color: #181818;
+        border-top: 1px solid #282828;
+        padding: 10px 0;
+    }
+
+    .btn-spotify {
+        background-color: #1DB954;
+        color: white;
+    }
+
+    .title {
+        color: #1DB954;
+
+    }
+
+    .btn-spotify:hover {
+        background-color: #1ed760;
+    }
+
+    .play-btn:hover,
+    .play-btn:active,
+    .play-btn:focus {
+        color: #1DB954;
+    }
+</style>
+
+<body>
+    <div class="container-fliud">
+        <div class="row">
+            <div class="col-md-3 sidebar d-none d-md-block">
+                <center>
+                    <svg class="bg-light" style="max-width: 120px;" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M4 10V13" stroke="#1C1C1C" stroke-width="1.7" stroke-linecap="round"></path>
+                            <path d="M16 10V13" stroke="#1DB954" stroke-width="1.7" stroke-linecap="round"></path>
+                            <path d="M7 7L7 16" stroke="#1DB954" stroke-width="1.7" stroke-linecap="round"></path>
+                            <path d="M13 7L13 16" stroke="#1C1C1C" stroke-width="1.7" stroke-linecap="round"></path>
+                            <path d="M19 7L19 16" stroke="#1C1C1C" stroke-width="1.7" stroke-linecap="round"></path>
+                            <path d="M10 4L10 19" stroke="#1C1C1C" stroke-width="1.7" stroke-linecap="round"></path>
+                        </g>
+                    </svg>
+                    <br>
+                    <br>
+                    <h4>Canción y Emoción</h4>
+                </center>
+
+                <hr style="border: #fff;">
+                <ul>
+                    <li>
+                        <a href="#inicio" class="text-white">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#acercade" class="text-white">Acerca de</a>
+                    </li>
+                    <li>
+                        <a href="#demos" class="text-white"> Demos</a>
+                    </li>
+                    <li>
+                        <a href="#tarifa" class="text-white"> Tarifa</a>
+                    </li>
+                    <li>
+                        <a href="#contacto" class="text-white"> Contacto</a>
+                    </li>
+                </ul>
+                <img src="/doll.png" alt="" style="opacity: 0.15;" class="img-fluid">
+            </div>
+            <div class="col-md-9 col-sm-12 main-content">
+                <br>
+                <br>
+                <div class="">
+                    <center>
+                        <svg class="bg-light" style="max-width: 120px;" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M4 10V13" stroke="#1C1C1C" stroke-width="1.7" stroke-linecap="round"></path>
+                                <path d="M16 10V13" stroke="#1DB954" stroke-width="1.7" stroke-linecap="round"></path>
+                                <path d="M7 7L7 16" stroke="#1DB954" stroke-width="1.7" stroke-linecap="round"></path>
+                                <path d="M13 7L13 16" stroke="#1C1C1C" stroke-width="1.7" stroke-linecap="round"></path>
+                                <path d="M19 7L19 16" stroke="#1C1C1C" stroke-width="1.7" stroke-linecap="round"></path>
+                                <path d="M10 4L10 19" stroke="#1C1C1C" stroke-width="1.7" stroke-linecap="round"></path>
+                            </g>
+                        </svg>
+                        <br>
+                        <br>
+                        <h4>Canción y Emoción</h4>
+                    </center>
+                </div>
+                <br>
+                <br>
+
+                <div style="border-top: #282828 1px solid;" class="container">
+                    <br>
+                    <div id="inicio">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <center>
+                                    <div
+                                        style="width: 180px; height: 180px; background-image: url(./cover.png); background-size: cover; background-position: center;">
+                                        <div class="play-btn"
+                                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
+                                            <i class="fas fa-play-circle fa-3x" style="color: white;"></i>
+                                        </div>
+                                    </div>
+                                    <small>Una cancion personalizada para ese momento especial</small>
+                                </center>
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <br>
+                                <br>
+                                <p>
+                                    ¡Canciones personalizadas para cada momento! Ya sea para tu empresa, evento especial
+                                    o
+                                    como un regalo único, creamos la canción perfecta en cualquier estilo musical que
+                                    desees. Desde reggaetón hasta música clásica, ¡nos adaptamos a ti!
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <br>
+                    <div id="acercade">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <br>
+                                <br>
+                                <h4 class="title">
+                                    ¿Qué Ofrecemos?
+                                </h4>
+                                <p>
+                                    En <b>Canción y Emoción,</b> creamos música y jingles a medida para todo tipo de
+                                    ocasiones:
+                                <ul>
+                                    <li>
+                                        Empresas: Canciones corporativas o jingles creativos para promocionar servicios
+                                        y
+                                        productos.
+                                    </li>
+                                    <li>
+                                        Eventos especiales: Canciones únicas para bodas, cumpleaños, XV años, primeras
+                                        comuniones, etc.
+
+                                    </li>
+                                    <li>
+                                        Regalos personalizados: Sorprende a tus seres queridos con una canción creada
+                                        solo
+                                        para ellos.
+                                    </li>
+                                </ul>
+                                </p>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <center class="p-5">
+                                    <img src="./vinilos.png" alt="" class="img img-fluid">
+                                </center>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <br>
+                                <center class="p-1">
+                                    <img src="./robots.png" alt="" class="img img-fluid">
+                                </center>
+                            </div>
+                            <div class="col-md-9">
+                                <h4 class="title">Proceso Simple y Efectivo</h4>
+                                <ul>
+                                    <li>Llenas un cuestionario: Cuéntanos el motivo de la canción, el estilo musical y
+                                        qué
+                                        quieres que incluya.</li>
+                                    <li>Adelanto de pago: Solo necesitas cubrir una pequeña parte del costo para iniciar
+                                        el
+                                        proceso.</li>
+                                    <li> Primera propuesta: En un día hábil recibirás dos opciones de letras para tu
+                                        canción.</li>
+                                    <li>Personalización: Escoge una letra o sugiere ajustes pequeños para personalizarla
+                                        a tu
+                                        gusto.</li>
+                                    <li> Versión final: Escoge entre dos versiones musicales basadas en tu estilo. ¡Así
+                                        de fácil!</li>
+                                </ul>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="./cd1.png" alt="" class="img img-fluid">
+                            </div>
+                            <div class="col-3">
+                                <img src="./cd3.png" alt="" class="img img-fluid">
+                            </div>
+                            <div class="col-3"><img src="./cd2.png" alt="" class="img img-fluid"></div>
+                            <div class="col-3"><img src="./cd4.png" alt="" class="img img-fluid"></div>
+                        </div>
+                        <div id="tarifa" class="row">
+                            <div class="col-12">
+                                <br>
+                                <br>
+                                <center>
+                                    <h4 class="title">Tarifa Única</h4>
+                                    <br>
+                                    <p>Por solo
+                                        <span class="title">$1,200 MXN,</span> recibirás:
+                                    </p>
+                                    <br>
+                                    <p>Una canción personalizada.</p>
+                                    <p> Dos opciones de letra y dos versiones musicales para elegir.</p>
+                                    <p> Entrega rápida y la opción de hacer pequeños ajustes</p>
+                                </center>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="demos">
+                        <br>
+                        <br>
+                        <center>
+                            <h2 class="title">Demos</h2>
+                            <p>
+                                Escucha algunos de nuestros trabajos más recientes y descubre cómo transformamos ideas
+                                en música. Desde jingles corporativos hasta canciones para eventos y más.
+                            </p>
+                        </center>
+                        <table class="table  table-borderless" class="text-white"
+                            style="background-color: transparent; color: #fff;">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Titulo</th>
+                                    <th>Descripción</th>
+                                    <th>Duración</th>
+                                </tr>
+                            </thead>
+                            <tbody id="songlist">
+
+
+                            </tbody>
+                        </table>
+
+                        <br>
+                        <br>
+
+                        <center>
+                            <p>A continuacion una muestra de una de nuestras canciones en un video promocional</p>
+
+                            <br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item"
+                                                src="https://www.youtube.com/embed/GluOReEKDCI"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </center>
+
+                    </div>
+                    <div id="contacto">
+                        <br>
+                        <br>
+                        <br>
+                        <h2 class="title">Contacto</h2>
+                        <br>
+                        <p>¿Listo para darle vida a tu proyecto o evento con una canción única? Llena nuestro
+                            cuestionario y comienza hoy. Te responderemos cuanto antes.</p>
+                        <center>
+                            <a target="_blank"
+                                href="https://wa.me/+525658909869?text=Deseo%20contratar%20el%20servicio%20de%20canciones%20personalizadas."
+                                class="btn btn-spotify btn-lg">Contactanos directamente por Whatsaap</a>
+                        </center>
+                        <br>
+                        <div class="row">
+                            <div class="col-4">
+                                <img class="img img-fluid" src="./doll.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <p>
+                                    Cada una de nuestras canciones es creada por AN-IA y expertos en inteligencia
+                                    artificial, lo que
+                                    garantiza que cada composición sea única e irrepetible. La fusión de tecnología y
+                                    creatividad nos permite ofrecerte una experiencia musical que no encontrarás en
+                                    ningún otro
+                                    lugar.
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                        <center>
+                            <p>
+                                Si tienes alguna duda o deseas comenzar, contáctanos hoy mismo.
+                                <br> ¡Será un placer hacer música contigo!
+                            </p>
+                            <a target="_blank"
+                                href="https://wa.me/+525658909869?text=Deseo%20contratar%20el%20servicio%20de%20canciones%20personalizadas."
+                                class="btn btn-spotify btn-lg">Contactanos</a>
+                        </center>
+                        <br>
+                        <center>
+                            <small>
+                                &copy; 2024 - Derechos reservados a <a href="https://leganux.com">leganux.com</a>
+                            </small>
+                        </center>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <audio id="audioPlayer" controls class="w-100">
+        <source id="audioSource" src="" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+    </audio>
+
+    <footer class="fixed-bottom player">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <img id="cover__" src="/image/cancionyemocion.png " alt="Current song cover" width="56" height="56"
+                        class="float-start me-3">
+                    <div>
+                        <h6 id="title__" class="mb-0">Canción y emoción</h6>
+                        <small id="description__">Lo quiero ahora</small>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="btn-group">
+                        <button id="back" class="btn btn-link text-white"><i class="fas fa-step-backward"></i></button>
+                        <button id="pause" class="btn btn-link text-white"><i
+                                class="fas fa-play-circle fa-2x"></i></button>
+                        <button id="next" class="btn btn-link text-white"><i class="fas fa-step-forward"></i></button>
+                    </div>
+                    <div class="progress mt-2" style="height: 4px;">
+                        <div id="progressBar" class="progress-bar bg-success" role="progressbar" style="width: 1%;"
+                            aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-end">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            let currentTrackIndex = 0;
+            let isplaying = false
+            alreadyPlay = false
+            const audioPlayer = document.getElementById('audioPlayer');
+            const audioSource = document.getElementById('audioSource');
+            const progressBar = document.getElementById('progressBar');
+
+            $('.play-btn').click(function () {
+                currentTrackIndex = 0;
+                loadTrack(currentTrackIndex)
+            })
+
+            $('#pause').click(function () {
+                if (isplaying) {
+                    audioPlayer.pause()
+                    isplaying = false
+                } else {
+                    if (alreadyPlay) {
+                        audioPlayer.play()
+                    } else {
+                        loadTrack(currentTrackIndex)
+                    }
+                    isplaying = true
+                }
+            })
+
+            $(document.body).click(function () {
+                if (!alreadyPlay) {
+                    loadTrack(0)
+                }
+            })
+            $(document.body).scroll(function () {
+                if (!alreadyPlay) {
+                    loadTrack(0)
+                }
+            })
+
+
+            $('#back').click(function () {
+                let new_ = currentTrackIndex - 1
+
+                if (new_ < 0) {
+                    new_ = playlist.length - 1
+                }
+                loadTrack(new_)
+
+            })
+            $('#next').click(function () {
+
+                let new_ = currentTrackIndex + 1
+                if (new_ > playlist.length) {
+                    new_ = 0
+                }
+                loadTrack(new_)
+
+            })
+            function loadTrack(index) {
+                currentTrackIndex = index;
+                audioSource.src = playlist[currentTrackIndex].file;
+                audioPlayer.load();
+                audioPlayer.play();
+                isplaying = true
+                alreadyPlay = true
+
+                $("#cover__").attr('src', '/image/' + playlist[currentTrackIndex].image)
+                $("#title__").text(playlist[currentTrackIndex].title)
+                $("#description__").text(playlist[currentTrackIndex].description)
+            }
+
+            audioPlayer.addEventListener('ended', () => {
+                currentTrackIndex = (currentTrackIndex + 1);
+                loadTrack(currentTrackIndex);
+            });
+
+            audioPlayer.addEventListener('timeupdate', () => {
+                const percentage = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+                progressBar.style.width = `${percentage}%`;
+            });
+
+            let playlist = [
+                {
+                    title: "Canción y emocion",
+                    file: "/songs/cancionyemocionesparati.mp3",
+                    time: "02:40",
+                    description: "Tema principal de este servicio",
+                    image: "/cancionyemocion.png",
+                },
+                {
+                    title: "Canción y emocion - Alegre",
+                    file: "/songs/cancionyemocion1.mp3",
+                    time: "04:00",
+                    description: "Tema principal de este servicio en otra versión",
+                    image: "/cancionyemocion.png",
+                },
+                {
+                    title: "MyScentJourney",
+                    file: "/songs/myscentjourney1.mp3",
+                    time: "04:00",
+                    description: "MyScentJourney la plataforma de perfumeria no 1 en México",
+                    image: "/myscentjourney.png",
+                },
+                {
+                    title: "MyScentJourney version 2",
+                    file: "/songs/myscentjourney2.mp3",
+                    time: "03:26",
+                    description: "MyScentJourney la plataforma de perfumeria no 1 en México",
+                    image: "/myscentjourney.png",
+                },
+                {
+                    title: "Leganux Bienvenido v2",
+                    file: "/songs/bievenidoleganuxhombre.mp3",
+                    time: "03:15",
+                    description: "Leganux Desarrollo Web y servicios TI a la medida y de gran calidad",
+                    image: "/leganux.png",
+                },
+                {
+                    title: "Leganux Bienvenido v2",
+                    file: "/songs/bievenidoleganuxhombre.mp3",
+                    time: "03:03",
+                    description: "Leganux Desarrollo Web y servicios TI a la medida y de gran calidad",
+                    image: "/leganux.png",
+                }
+                ,
+                {
+                    title: "Leganux Innovacion",
+                    file: "/songs/leganuxinnovacion.mp3",
+                    time: "02:32",
+                    description: "Leganux Desarrollo Web y servicios TI a la medida y de gran calidad",
+                    image: "/leganux.png",
+                },
+                {
+                    title: "Leganux Somos el futuro",
+                    file: "/songs/leganuxsomosfuturo.mp3",
+                    time: "03:42",
+                    description: "Leganux Desarrollo Web y servicios TI a la medida y de gran calidad",
+                    image: "/leganux.png",
+                },
+                {
+                    title: "Lavanderia Blanquita",
+                    file: "/songs/leganuxsomosfuturo.mp3",
+                    time: "01:59",
+                    description: "Lavanderia blanquita, precio y calidad en el lavado de tu ropa",
+                    image: "/lavanderia.jpg",
+                }, {
+                    title: "Pajarillo Reggaeton",
+                    file: "/songs/pajarillo.mp3",
+                    time: "03:56",
+                    description: "Cancion de Napoleon Pajarillo actualizada a reggaeton",
+                    image: "/cancionyemocion.png",
+                }
+            ]
+
+            $('.track').hover(
+                function () { $(this).css('background-color', '#282828'); },
+                function () { $(this).css('background-color', ''); }
+            );
+
+
+            $(".play-btn").parent().hover(
+                function () { $(".play-btn").css('display', 'block'); },
+                function () { $(".play-btn").css('display', 'none'); }
+            );
+
+
+            $('#songlist').html('')
+            let count = 0
+            for (let item of playlist) {
+                $('#songlist').append(` 
+                                <tr value='${count}'  class=" table-row song__">
+                                    <td>${count + 1}</td>
+                                    <td>${item.title}</td>
+                                    <td>${item.description}</td>
+                                    <td>${item.time}</td>
+                                </tr>
+            `)
+                count++
+
+            }
+
+
+            $('.table-row').hover(
+                function () { $(this).css('background-color', '#343a40'); },
+                function () { $(this).css('background-color', 'transparent'); }
+            );
+
+            $(document.body).on('click', '.song__', function () {
+                let selected = $(this).attr('value')
+                loadTrack(Number(selected))
+            })
+
+        });
+
+    </script>
+</body>
+
+</html>
