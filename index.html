@@ -417,7 +417,7 @@
             </div>
         </div>
     </div>
-    <audio id="audioPlayer" controls class="w-100">
+    <audio id="audioPlayer" style="display: none;" controls class="w-100">
         <source id="audioSource" src="" type="audio/mpeg">
         Tu navegador no soporta audio HTML5.
     </audio>
@@ -437,7 +437,7 @@
                     <div class="btn-group">
                         <button id="back" class="btn btn-link text-white"><i class="fas fa-step-backward"></i></button>
                         <button id="pause" class="btn btn-link text-white"><i
-                                class="fas fa-play-circle fa-2x"></i></button>
+                                class="fas fa-play-circle fa-2x icono_change"></i></button>
                         <button id="next" class="btn btn-link text-white"><i class="fas fa-step-forward"></i></button>
                     </div>
                     <div class="progress mt-2" style="height: 4px;">
@@ -516,6 +516,18 @@
                 loadTrack(new_)
 
             })
+
+            setInterval(function () {
+                if (isplaying) {
+                    $('.icono_change').removeClass('fa-play-circle')
+                    $('.icono_change').addClass('fa-pause-circle')
+                } else {
+                    $('.icono_change').removeClass('fa-pause-circle')
+                    $('.icono_change').addClass('fa-play-circle')
+                }
+
+            }, 300)
+
             function loadTrack(index) {
                 currentTrackIndex = index;
                 audioSource.src = playlist[currentTrackIndex].file;
@@ -553,6 +565,13 @@
                     time: "04:00",
                     description: "Tema principal de este servicio en otra versión",
                     image: "/cancionyemocion.png",
+                },
+                {
+                    title: "Un amor Obladi-Oblada",
+                    file: "/songs/yesterday.mp3",
+                    time: "03:01",
+                    description: "Cancion para el video de la boda de Daniel y Monica",
+                    image: "/boda.jpg",
                 },
                 {
                     title: "MyScentJourney",
@@ -603,12 +622,21 @@
                     time: "01:59",
                     description: "Lavanderia blanquita, precio y calidad en el lavado de tu ropa",
                     image: "/lavanderia.jpg",
-                }, {
-                    title: "Pajarillo Reggaeton",
-                    file: "/songs/pajarillo.mp3",
-                    time: "03:56",
-                    description: "Cancion de Napoleon Pajarillo actualizada a reggaeton",
-                    image: "/cancionyemocion.png",
+                },
+                {
+                    title: "Vals XV Maria",
+                    file: "/songs/maria2.mp3",
+                    time: "03:51",
+                    description: "Vals personalizado para los XV de Maria",
+                    image: "/maria1.jpeg",
+                }
+                ,
+                {
+                    title: "Invitación XV Maria",
+                    file: "/songs/maria1.mp3",
+                    time: "03:17",
+                    description: "Vals utilizado para la invitación para los XV de Maria",
+                    image: "/maria2.jpeg",
                 }
             ]
 
